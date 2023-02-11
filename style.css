@@ -58,7 +58,7 @@ header .row .register-btn button:hover {
 /* Vision CSS Starts Here */
 .vision {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.66),
@@ -67,6 +67,7 @@ header .row .register-btn button:hover {
     url(images/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .vision .row {
