@@ -1,0 +1,448 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  background: #ebebeb;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .row {
+  padding: 15px 100px;
+}
+
+header .row .logo img {
+  width: 180px;
+}
+
+header .row .register-btn {
+  display: flex;
+  align-items: center;
+}
+
+header .row .register-btn button {
+  padding: 12px 24px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #2596be;
+  border: none;
+  outline: none;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+header .row .register-btn button:hover {
+  background: #025e80;
+}
+
+/* Vision CSS Starts Here */
+.vision {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.66),
+      rgba(0, 0, 0, 0.66)
+    ),
+    url(images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vision .row {
+  position: relative;
+  top: 150px;
+  display: flex;
+  justify-content: right;
+  padding: 50px;
+}
+
+.vision-text h2 {
+  font-size: 62px;
+  color: #fff;
+  line-height: 1.6em;
+}
+
+.vision-text p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Procedure CSS Starts Here */
+
+.procedure {
+  width: 100%;
+  height: auto;
+}
+
+.procedure .row .col {
+  width: 50%;
+  padding: 50px 100px;
+}
+
+.procedure .row .col:nth-child(1) {
+  background: #ededed;
+}
+
+.procedure .row .col:nth-child(2) {
+  background: #025e80;
+}
+
+.steps h2 {
+  font-size: 36px;
+  line-height: 1.6em;
+}
+
+.steps p {
+  font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  padding: 6px 12px;
+}
+
+.image-container img {
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
+  transform: rotate(-8deg);
+}
+
+/* About CSS Starts Here */
+
+.about {
+  width: 100%;
+  height: auto;
+  background: #222;
+}
+
+.about .row {
+  padding: 25px;
+}
+
+.about .row .col {
+  width: 50%;
+}
+
+.about .row .col:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .row .col:nth-child(2) {
+  padding: 50px;
+}
+
+.img-container-1 img {
+  width: 300px;
+  border: 4px solid #fff;
+  border-bottom: 10px solid #fff;
+}
+
+.img-container-2 img {
+  display: block;
+  width: 295px;
+  border: 6px solid #fff;
+}
+
+.about-desc h2 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.6em;
+}
+
+.about-desc p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.about-desc p a {
+  color: #2596be;
+}
+
+/* Footer CSS Starts Here */
+
+footer {
+  width: 100%;
+}
+
+footer .row {
+  display: block;
+  padding: 30px 100px;
+}
+
+footer .row .col1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .row .col2 {
+  padding: 15px 0;
+}
+
+footer .row .logo img {
+  width: 160px;
+}
+
+footer .row .col2 p {
+  position: relative;
+  bottom: -20px;
+  font-size: 14px;
+}
+
+footer .row .col2 p a {
+  color: #025e80;
+}
+
+footer .contact-us {
+  width: 40%;
+}
+
+footer .contact-us h3 {
+  font-size: 24px;
+  line-height: 2em;
+}
+
+footer .contact-us #form {
+  display: flex;
+  gap: 10px;
+}
+
+footer .contact-us #form input {
+  width: 60%;
+  padding: 8px 16px;
+  border: 1px solid #bbbbbb;
+  outline: none;
+}
+
+footer .contact-us #form input:focus {
+  border: 1px solid #2596be;
+}
+
+footer .contact-us #form input[type="submit"] {
+  width: 100px;
+  padding: 8px 16px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #2596be;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+footer .contact-us #form input[type="submit"]:hover {
+  background: #025e80;
+}
+
+/* @Media Queries Starts Here*/
+
+/* Tablet Screen */
+@media screen and (max-width: 960px) {
+  header .row {
+    padding: 15px 60px;
+  }
+  header .row .logo img {
+    width: 140px;
+  }
+  header .row .register-btn button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .vision-text h2 {
+    font-size: 48px;
+  }
+  .vision-text p {
+    font-size: 16px;
+  }
+
+  .procedure .row {
+    display: block;
+  }
+  .procedure .row .col {
+    width: 100%;
+    padding: 50px 60px;
+  }
+  .steps h2 {
+    font-size: 32px;
+  }
+
+  .steps p {
+    font-size: 16px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container img {
+    width: 500px;
+    border-radius: 25px;
+  }
+
+  .about .row {
+    display: block;
+    padding: 25px;
+  }
+  .about .row .col {
+    width: 100%;
+  }
+
+  .img-container-1 img {
+    width: 300px;
+    border: 2px solid #fff;
+    border-bottom: 8px solid #fff;
+  }
+
+  .img-container-2 img {
+    display: block;
+    width: 295px;
+    border: 4px solid #fff;
+  }
+
+  .about-desc h2 {
+    font-size: 36px;
+  }
+
+  .about-desc p {
+    font-size: 14px;
+  }
+  .about .row .col:nth-child(2) {
+    padding: 25px;
+  }
+
+  footer .row {
+    display: block;
+    padding: 15px 60px;
+  }
+  footer .row .col1 {
+    display: block;
+  }
+
+  footer .contact-us {
+    width: 60%;
+    padding: 10px 0;
+  }
+  footer .row .col2 {
+    padding: 20px 0;
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 600px) {
+  header .row {
+    padding: 15px 30px;
+  }
+  header .row .logo img {
+    width: 120px;
+  }
+  header .row .register-btn button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .vision-text h2 {
+    font-size: 36px;
+  }
+  .vision-text p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .procedure .row {
+    display: block;
+  }
+  .procedure .row .col {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .steps h2 {
+    font-size: 28px;
+  }
+
+  .steps p {
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 6px 12px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container img {
+    width: 400px;
+    border-radius: 25px;
+  }
+
+  .about .row {
+    display: block;
+    padding: 25px;
+  }
+  .about .row .col {
+    width: 100%;
+  }
+  .img-container-1 img {
+    width: 180px;
+    border: 2px solid #fff;
+    border-bottom: 8px solid #fff;
+  }
+
+  .img-container-2 img {
+    display: block;
+    width: 175px;
+    border: 4px solid #fff;
+  }
+
+  .about-desc h2 {
+    font-size: 26px;
+  }
+
+  .about-desc p {
+    font-size: 12px;
+  }
+  .about .row .col:nth-child(2) {
+    padding: 25px;
+  }
+
+  footer .row {
+    display: block;
+    padding: 15px 30px;
+  }
+  footer .row .col1 {
+    display: block;
+  }
+  footer .contact-us {
+    width: 100%;
+    padding: 10px 0;
+  }
+  footer .row .col2 {
+    padding: 20px 0;
+  }
+}
